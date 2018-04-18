@@ -581,28 +581,4 @@ e2.get(2); // -> 2
 ```
 
 
-二、进阶JAVA
-基本文件读写操作
-多线程开发，IO/NIO
-线程基础知识（Thread、同步、Threadlocal、Wait、Notify，Sleep。。。
-JVM了解：内存模型，类加载机制，垃圾回收机制
-
-三、Java web开发
-JavaEE了解：servlet，JDBC, tomcat, 
-Spring+mybatis开发框架了解
-
-Http协议基础知识：协议、GET/POST、Header、Http Cache、跨域。。。
-Cookie、Session原理及区别
-Servlet工作原理
-Velocity基础
-Tomcat基础知识
-
-四、框架
-Spring框架：IOC、AOP、注解、配置文件、Beanfactory、spring jdbc
-Spring MVC:Controller、Request Mapping、ResponseBody、请求接收处理流程
-MyBatis/ibatis基础：与spring jdbc配合、配置文件、语法、执行流程
-
-IOC、AOP
-Bean管理和装配
-SpringMVC
 
