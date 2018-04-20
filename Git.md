@@ -68,7 +68,7 @@ HEAD is now at 049d078 added the index file (To restore them type "git stash app
 
 ## 3. Git CheatSheet
 
-<div align="center"> <img src="/git_cheat_sheet.jpg"/> </div><br>
+<div align="center"> <img src="//git_cheat_sheet.jpg"/> </div><br>
 
 
 
