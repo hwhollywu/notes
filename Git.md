@@ -69,6 +69,6 @@ HEAD is now at 049d078 added the index file (To restore them type "git stash app
 ## 3. Git CheatSheet
 
 
-[Git CheatSheet](https://github.com/hwhollywu/notes/blob/master/git_cheat_sheet.jpg?raw=true)
+![Git CheatSheet](https://github.com/hwhollywu/notes/blob/master/git_cheat_sheet.jpg?raw=true)
 
 
