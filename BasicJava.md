@@ -6,7 +6,7 @@ Sources：
 - GeeksforGeeks
 
 
-![Basic Java Menu](https://github.com/hwhollywu/notes/blob/master/git_cheat_sheet.jpg?raw=true)
+![Basic Java Menu](https://github.com/hwhollywu/notes/blob/master/basicjava.jpg?raw=true)
 
 
 
