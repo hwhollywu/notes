@@ -513,12 +513,12 @@ final methods: prevent method overriding
 final classes: prevent inheritance
 
 ### 13.2 static
-static:  a non-access modifier applicable to blocks/variables/methods/nested classes.
-static variables:  global variable, shared among class. 
-static methods: main class, can only call other static methods/access static data/ can't refer to this or super
-nested classes: static nested class + inner class(non-static)
-static nested class: access only static members of outer class.
-static block: gets executed exactly once, to initialize 
+- static:  a non-access modifier applicable to blocks/variables/methods/nested classes.
+- static variables:  global variable, shared among class. 
+- static methods: main class, can only call other static methods/access static data/ can't refer to this or super
+- nested classes: static nested class + inner class(non-static)
+- static nested class: access only static members of outer class.
+- static block: gets executed exactly once, to initialize 
 ```java 
     // static variable
     static int a = 10;
