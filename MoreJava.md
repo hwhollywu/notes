@@ -439,17 +439,18 @@ after store, store the var in main memory
 - lock : for vars in the main memory
 - unlock : for vars in the main memory
 
-### 4.3 JMM 三大特性：原子性、可见性、有序性
+### 4.3 JMM 三大特性：原子性 Atomicity、可见性 Visibility、有序性 Ordering
+
 Source: [并发二：原子性、可见性、有序性](https://www.jianshu.com/p/9c5a7d21c02f)
 
 - 原子性：一个操作不会被线程调度机制打断。 no context switch
-volatile, lock.
+Use: volatile, lock.
 
 - 可见性：一个线程对变量的值进行了修改，其他线程能够立即得知这个修改。
-fianl, volatile, lock.
+Use: final, volatile, lock.
 
 - 有序性： 由于CPU的计算速度远远高于内存的读写速度，会使用高速缓存(Cache)，为了减少CACHE_WAIT，CPU会采用指令级并行重排序来提供执行效率/乱序执行。保障排序之后的结果正确性。
-as-if-serial, happens-before, synchronized.
+Use: as-if-serial, happens-before, synchronized.
 
 Happens-before Principles:
 1. Single Thread rule: within one thread, the statements before get executed before the statements after
@@ -461,7 +462,20 @@ Happens-before Principles:
 7. Finalizer Rule: initialization before finalize()
 8. Transitivity: if A happens before B, B happens before C, then A happens before C
 
+### 4.4 volatile keyword
+Sources:
+[volatile-keyword-in-java](https://www.geeksforgeeks.org/volatile-keyword-in-java/)
+[Java并发编程：volatile关键字解析](https://www.cnblogs.com/dolphin0520/p/3920373.html)
 
+```
+class SharedObj
+{
+   // volatile keyword here makes sure that
+   // the changes made in one thread are 
+   // immediately reflect in other thread
+   static volatile int sharedVar = 6;
+}
+```
 
 ## 5. 虚拟机 JVM: Java Virtual Machine 内存模型，类加载机制，垃圾回收机制
 
