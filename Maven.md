@@ -1,10 +1,10 @@
 # Maven
 
 Source:
-[Apache Maven](https://maven.apache.org/index.html)
-[Maven教程](https://www.yiibai.com/maven/)
-[Maven Tutorial](https://www.tutorialspoint.com/maven/maven_overview.htm)
-[How to do Java](https://howtodoinjava.com/maven/local-remote-central-repositories/)
+- [Apache Maven](https://maven.apache.org/index.html)
+- [Maven教程](https://www.yiibai.com/maven/)
+- [Maven Tutorial](https://www.tutorialspoint.com/maven/maven_overview.htm)
+- [How to do Java](https://howtodoinjava.com/maven/local-remote-central-repositories/)
 
 Apache Maven : a software project management and comprehension tool for any Java based project. Maven project structure and contents are declared in an xml file, pom.xml, referred as Project Object Model (POM).
 
