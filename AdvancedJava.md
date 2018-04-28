@@ -5,7 +5,7 @@ Sources:
 - [GitHub - Java 并发.md](https://github.com/CyC2018/Interview-Notebook/blob/master/notes/Java%20%E5%B9%B6%E5%8F%91.md)
 - [GitHub - Java 虚拟机.md](https://github.com/CyC2018/Interview-Notebook/blob/master/notes/Java%20%E8%99%9A%E6%8B%9F%E6%9C%BA.md)
 
-![Advanced Java Menu](https://github.com/hwhollywu/notes/blob/master/Advanced.jpg?raw=true)
+![Advanced Java Menu](https://github.com/hwhollywu/notes/blob/master/AdvancedJava.jpg?raw=true)
 
 ## 1. 基本文件读写操作 Java IO
 ### 1.1 Disk: File
