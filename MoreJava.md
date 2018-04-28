@@ -415,7 +415,55 @@ public class ThreadLocalExample1 {
 }
 ```
 
-## 4. 虚拟机 JVM: Java Virtual Machine 内存模型，类加载机制，垃圾回收机制
+## 4. 内存模型 JMM: Java Memory Model
+
+In order to run Java on different platforms, JMM deals with the hardware and OS memory differences.
+
+### 4.1 工作内存 Working Memory & 主内存 Main Memory
+
+- CPU <-> Cache -> Protocol -> Memory
+Cache: faster than CPU
+Protocol: deals with differences in cache data 
+- Thread <-> Working Memory - Main Memory
+Each thread has its own working memory. Variables change among different threads needs to pass through the main memory. 
+
+### 4.2 Operations: 
+- read: main memory -> working memory
+- store: working memory -> main memory
+- load: working memory <-> working memory
+after read, store the var in working memory 
+- use: working memory -> thread
+- assign: thread -> working memory
+- write: main memory -> main memory
+after store, store the var in main memory
+- lock : for vars in the main memory
+- unlock : for vars in the main memory
+
+### 4.3 JMM 三大特性：原子性、可见性、有序性
+Source: [并发二：原子性、可见性、有序性](https://www.jianshu.com/p/9c5a7d21c02f)
+
+- 原子性：一个操作不会被线程调度机制打断。 no context switch
+volatile, lock.
+
+- 可见性：一个线程对变量的值进行了修改，其他线程能够立即得知这个修改。
+fianl, volatile, lock.
+
+- 有序性： 由于CPU的计算速度远远高于内存的读写速度，会使用高速缓存(Cache)，为了减少CACHE_WAIT，CPU会采用指令级并行重排序来提供执行效率/乱序执行。保障排序之后的结果正确性。
+as-if-serial, happens-before, synchronized.
+
+Happens-before Principles:
+1. Single Thread rule: within one thread, the statements before get executed before the statements after
+2. Monitor Lock Rule: unlock happens before the lock operation for the same lock
+3. Volatile Variable Rule: write volatile variable happens before read volatile
+4. Thread Start Rule: thread start() happens before any statements in the thread
+5. Thread Join Rule: join()-(waiting till the other thread is done) happens before the later on statements in the original thread
+6. Thread Interruption Rule: interrupt() happens before the code find the interruption. Use Thread.interrupted() to see if interruption happens.
+7. Finalizer Rule: initialization before finalize()
+8. Transitivity: if A happens before B, B happens before C, then A happens before C
+
+
+
+## 5. 虚拟机 JVM: Java Virtual Machine 内存模型，类加载机制，垃圾回收机制
 
 
 
