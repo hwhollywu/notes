@@ -462,6 +462,17 @@ BinaryOperator<Long> add = (x, y) -> x + y;
 
 BinaryOperator<Long> addExplicit = (Long x, Long y) -> x + y;
 
+
+// lambda for hashmap
+
+mappy.forEach((key,value) -> {
+});
+
+// lambda for list
+
+listy.stream().forEach(acl -> {
+});
+
 ```
 
 ### 12.2 流 Stream
