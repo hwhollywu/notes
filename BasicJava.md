@@ -596,3 +596,9 @@ e2.get(2); // -> 2
 
 ```
 
+### 13.5 size or length
+
+Arrays int[], double[], String[] => length
+String, StringBuilder => length()
+ArrayList or java.util.Collection classes => size()
+
