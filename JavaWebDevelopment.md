@@ -1,7 +1,7 @@
 # Java Web Development 
 
-Sources：
-- [GitHub - Interview-HTTP](https://github.com/CyC2018/Interview-Notebook/blob/master/notes/HTTP.md)
+Sources:
+- [GitHub -InterviewNotebook-HTTP](https://github.com/CyC2018/Interview-Notebook/blob/master/notes/HTTP.md)
 
 ## 1. HTTP协议
 WWW（World Wide Web）的三种技术：HTML、HTTP、URL。
