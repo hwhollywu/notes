@@ -129,6 +129,8 @@ Gnutella (GNU Project) is a large peer-to-peer network, released in 2000. Used b
 4. A new node will send getaddr information to its connected nodes, and request them to return IP list of equivalent nodes, in order to connect with equivalent nodes.
 5. When starting up a node, can assign the node with an active IP. If not, the client still maintains a list of stable nodes (种子节点: in order to quickly connect to other nodes).
 
+BT torrent种子下载 = P2P应用，有多少种子就是有多少个网友在下载同时上传，说用/下载的人越多，速度也就越快。
+
 * Bitcoin nodes usually use TCP Protocal & 8333 port to connect with other nodes. 
 ---
 lookup bitcoin hosts  (bitcoin 8333) (ethereum port 80303)
