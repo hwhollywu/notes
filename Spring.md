@@ -36,6 +36,7 @@ Spring creates dynamic proxies to the target objects &  weaves the objects with 
 
 * Expression Language (EL) is a technology to allow an application to manipulate Java objects at runtime. Unified Expression Language solved the problem that different technologies(e.g. Java Server Pages (JSP) and Java Server Faces (JSF)) provide different EL implementations and syntaxes. -> Spring Expression Language (SpEL) version 3.0
 
+* Validation
 
 
 
