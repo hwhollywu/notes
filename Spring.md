@@ -11,7 +11,7 @@ Sources: Apress Pro Spring 4th Edition
 * lightweight = minimal impact. make few changes to gain the benefits of the Spring core.
 
 ## Spring core:
-### Inversion of Control (IoC): 
+### Inversion of Control (IoC) (Chapter 3)
 externalizes the creation and management of component dependencies. Dependency Injection (DI): an instance of a subclass is provided to superclass at runtime by some external process. Based on JavaBeans( (POJOs) and interfaces.
 
 #### Different ways in defining dependency configuration:
@@ -31,23 +31,36 @@ Drawback: difficult to see what implementation of a particular dependency is bei
 
 ##### Spring Framework 4 supports Java 8: lambda expressions and method references with Spring’s callback interfaces.
 
-## AOP(Aspect-Oriented Programming)
+## AOP(Aspect-Oriented Programming)  (Chapter 5)
 implement crosscutting logic: logic that applies to many parts of (across) your application automatically.
 Spring creates dynamic proxies to the target objects &  weaves the objects with the configured advice to execute the crosscutting logic.
 
 ## Expression Language (EL) 
  a technology allows an application to manipulate Java objects at runtime. Unified Expression Language solved the problem that different technologies(e.g. Java Server Pages (JSP) and Java Server Faces (JSF)) provide different EL implementations and syntaxes. -> Spring Expression Language (SpEL) version 3.0
 
-## Validation
+## Validation (Chapter 10)
 a built-in validation API, Validator interface, which allows encapsulating validation logic into a class responsible for validating the target object. Also maintains an Errors object & ValidationUtils utility class. 
 
+## Data Access (Chapter 8)
+support for JDBC, Hibernate, JDO, and the JPA. MyBatis-Spring. Spring Data project: other “special-purpose” databases such as NoSQL. 
 
+## Object/XML Mapping in Spring (Chapter 12)
+Spring provides common interfaces for marshalling (transforming JavaBeans into XML) and unmarshalling (transforming XML into Java objects) for DI into any Spring beans. Libraries: Java Architecture for XML Binding (JAXB), Castor, XStream, JiBX, and XMLBeans. 
 
+More:
+* Transaction Management (Chapter 9): an abstraction layer for programmatic and declarative transaction control
+* Simplifying and Integrating with JEE
+* MVC in the Web Tier
+* WebSocket Support (Chapter 17)
 
+## The Spring Project 
 
 # Chap 2. Getting Started
+-> How to obtain the Spring Framework basic code.
+
+
 # Chap 3. Introducing IoC and DI in Spring
-# Chap 4. Spring Con guration in Detail
+# Chap 4. Spring Configuration in Detail
 # Chap 5. Introducing Spring AOP
 # Chap 6. Spring JDBC Support 
 # Chap 7. Using Hibernate in Spring
